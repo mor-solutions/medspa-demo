@@ -2,164 +2,271 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mor Solutions</title>
-  <meta name="description" content="Mor Solutions builds clean lead-capture systems and instant follow-ups for local businesses." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecru Aesthetics — Booking Requests</title>
+  <meta name="description" content="Minimal med spa booking demo with instant confirmation." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="top">
-    <div class="wrap top-inner">
-      <a class="brand" href="#top" aria-label="Mor Solutions Home">
-        <span class="mark"></span>
-        <span class="brand-text">Mor Solutions</span>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="#top" aria-label="Ecru Aesthetics home">
+        <span class="logo-mark"></span>
+        <span class="logo-text">
+          <span class="logo-name">Ecru</span>
+          <span class="logo-sub">Aesthetics</span>
+        </span>
       </a>
 
       <nav class="nav">
-        <a href="#demos">Demos</a>
-        <a href="#offer">Offer</a>
-        <a class="pill" href="#contact">Book</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a class="nav-cta" href="#book">Request</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- Hero: split layout -->
     <section class="hero">
-      <div class="wrap hero-grid">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Los Angeles</p>
-          <h1>Stop missing customers after hours.</h1>
-          <p class="sub">
-            Mor Solutions installs simple lead systems: a clean page + instant response + optional follow-up.
-            Lightweight, fast, and built to convert.
+          <p class="kicker">Los Angeles • By appointment</p>
+          <h1>Clean, calm, and effortless booking.</h1>
+          <p class="subhead">
+            Submit a request in under a minute. Get an instant confirmation and service-specific next steps.
           </p>
 
-          <div class="cta">
-            <!-- Use your booking link if you have one; otherwise keep mailto -->
-            <a class="btn" href="#contact">Book / Contact</a>
-            <a class="btn ghost" href="#demos">View demos</a>
+          <div class="hero-actions">
+            <a class="btn" href="#book">Request an appointment</a>
+            <a class="btn btn-ghost" href="#services">Explore services</a>
           </div>
 
-          <div class="chips">
-            <span class="chip">Lead capture</span>
-            <span class="chip">Instant response</span>
-            <span class="chip">Follow-up ready</span>
+          <div class="micro">
+            <div class="micro-item">
+              <span class="dot"></span> Instant confirmation
+            </div>
+            <div class="micro-item">
+              <span class="dot"></span> New-client intake
+            </div>
+            <div class="micro-item">
+              <span class="dot"></span> Follow-up ready
+            </div>
           </div>
+
+          <p class="fineprint">Demo experience • Built by Mor Solutions (no messages are actually sent)</p>
         </div>
 
-        <div class="hero-card">
-          <div class="card">
-            <div class="card-title">What you get</div>
-            <ul class="list">
-              <li>Clean landing section or one-page site</li>
-              <li>Smart form / instant confirmation</li>
-              <li>Optional: SMS/email follow-up automation</li>
-              <li>Fast setup + small ongoing support (optional)</li>
-            </ul>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-title">Today’s availability</div>
+            <div class="slots">
+              <span class="slot">12:10</span>
+              <span class="slot">1:40</span>
+              <span class="slot">3:15</span>
+              <span class="slot muted-slot">Waitlist</span>
+            </div>
 
-            <div class="mini">
-              <div class="mini-row">
-                <span class="label">Setup</span>
-                <span class="value">$800–$1,500</span>
-              </div>
-              <div class="mini-row">
-                <span class="label">Support</span>
-                <span class="value">$100–$300/mo</span>
-              </div>
+            <div class="panel-divider"></div>
+
+            <div class="panel-row">
+              <div class="panel-label">Response time</div>
+              <div class="panel-value">~ 5–15 min</div>
+            </div>
+            <div class="panel-row">
+              <div class="panel-label">Confirmation</div>
+              <div class="panel-value">Text message</div>
+            </div>
+            <div class="panel-row">
+              <div class="panel-label">New client</div>
+              <div class="panel-value">Intake included</div>
+            </div>
+
+            <a class="btn btn-compact" href="#book">Request now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: new layout (horizontal + minimal cards) -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Choose a service and preferred time. The system handles intake and next steps automatically.</p>
+        </div>
+
+        <div class="service-rail">
+          <article class="svc">
+            <h3>Botox</h3>
+            <p>Pre-care + provider confirmation.</p>
+          </article>
+          <article class="svc">
+            <h3>Dermal Fillers</h3>
+            <p>Consult + treatment plan.</p>
+          </article>
+          <article class="svc">
+            <h3>Laser Hair Removal</h3>
+            <p>Eligibility + prep steps.</p>
+          </article>
+          <article class="svc">
+            <h3>Facials</h3>
+            <p>Skin goals + recommendations.</p>
+          </article>
+          <article class="svc">
+            <h3>Microneedling</h3>
+            <p>Aftercare notes included.</p>
+          </article>
+          <article class="svc">
+            <h3>IV Therapy</h3>
+            <p>Hydration & recovery support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process: brand-new look (timeline) -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2>Process</h2>
+          <p>Simple steps that reduce drop-off and capture leads after hours.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-num">01</div>
+            <div class="t-body">
+              <h3>Request</h3>
+              <p>Client submits service + preferred time + basics.</p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-num">02</div>
+            <div class="t-body">
+              <h3>Instant confirmation</h3>
+              <p>Client receives next steps immediately (even after hours).</p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-num">03</div>
+            <div class="t-body">
+              <h3>Appointment booked</h3>
+              <p>Business confirms by text + optional reminders reduce no-shows.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DEMOS -->
-    <section class="section" id="demos">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Demos</h2>
-          <p>Short examples of the systems I install.</p>
-        </div>
-
-          <a class="demo" href="https://mor-solutions.github.io/medspa-demo/" target="_blank">
-
-            <div class="demo-title">Med Spa — Booking Requests</div>
-            <div class="demo-sub">Service → time → instant next steps</div>
-            <div class="demo-tag">Appointments</div>
-          </a>
-
-          <div class="demo demo-static">
-            <div class="demo-title">Want a demo for your niche?</div>
-            <div class="demo-sub">I can tailor one in a day.</div>
-            <div class="demo-tag">Custom</div>
+    <!-- Booking: totally different layout (stack + right-side output) -->
+    <section class="section book" id="book">
+      <div class="container book-grid">
+        <div class="book-form">
+          <div class="section-head tight">
+            <h2>Request an appointment</h2>
+            <p>Demo form — submit to generate the instant confirmation message.</p>
           </div>
+
+          <form id="leadForm" class="form">
+            <div class="field-row">
+              <label>
+                Name
+                <input id="name" type="text" placeholder="Jane Doe" required />
+              </label>
+              <label>
+                Phone
+                <input id="phone" type="tel" placeholder="(310) 555-0123" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Service
+                <select id="service" required>
+                  <option value="">Select</option>
+                  <option>Botox</option>
+                  <option>Dermal Fillers</option>
+                  <option>Laser Hair Removal</option>
+                  <option>Facial</option>
+                  <option>Microneedling</option>
+                  <option>IV Therapy</option>
+                  <option>Other / Not sure</option>
+                </select>
+              </label>
+              <label>
+                Preferred time
+                <select id="time" required>
+                  <option value="">Select</option>
+                  <option>Today (ASAP)</option>
+                  <option>Tomorrow</option>
+                  <option>This week</option>
+                  <option>Next week</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                New client?
+                <select id="newClient" required>
+                  <option value="">Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </label>
+              <label>
+                Budget (optional)
+                <select id="budget">
+                  <option value="">Optional</option>
+                  <option>$150–$300</option>
+                  <option>$300–$600</option>
+                  <option>$600–$1,000</option>
+                  <option>$1,000+</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Notes (optional)
+              <textarea id="notes" rows="4" placeholder="Goals, questions, areas of focus..."></textarea>
+            </label>
+
+            <button class="btn btn-wide" type="submit">Submit request</button>
+          </form>
+
+          <p class="fineprint">No data is sent in this demo.</p>
         </div>
+
+        <aside class="book-output" aria-live="polite">
+          <div class="output-card">
+            <div class="output-title">Instant confirmation</div>
+            <div id="response" class="output-body">
+              Submit the form to see the smart response.
+            </div>
+            <div class="output-divider"></div>
+            <div class="output-sub">
+              In a real install, this can auto-send SMS/email, log leads, and trigger reminders.
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <!-- OFFER -->
-    <section class="section" id="offer">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Offer</h2>
-          <p>Simple, outcome-focused, no fluff.</p>
+    <!-- Footer: minimal -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="foot-left">
+          <div class="foot-name">Ecru Aesthetics</div>
+          <div class="foot-sub">Minimal demo • Los Angeles</div>
         </div>
-
-        <div class="offer-grid">
-          <div class="panel">
-            <h3>Setup (1–2 days)</h3>
-            <p class="muted">
-              I build and install a clean page/section plus a lead capture flow with instant confirmation.
-              Designed to reduce missed leads and increase conversions.
-            </p>
-          </div>
-
-          <div class="panel">
-            <h3>Optional follow-up</h3>
-            <p class="muted">
-              SMS/email confirmations, reminders, and basic lead logging.
-              Add when you’re ready — not required to start.
-            </p>
-          </div>
-
-          <div class="panel">
-            <h3>Best fit</h3>
-            <p class="muted">
-              Home services (plumbers, HVAC, electricians), med spas, barbers, coaches — anyone who loses leads from slow replies.
-            </p>
-          </div>
-        </div>
+        <div class="foot-right">© <span id="year"></span></div>
       </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>Fast reply. Tell me your business type + what you want to book more of.</p>
-        </div>
-
-        <div class="contact">
-          <!-- Email -->
-          <a class="btn" href="mailto:morsolutionsfast@gmail.com">morsolutionsfast@gmail.com</a>
-
-          <!-- Phone -->
-          <a class="btn ghost" href="tel:13107437441">(310) 743-7441</a>
-
-          <!-- Optional: Instagram -->
-          <a class="btn ghost" href="https://instagram.com/mor_is_les" target="_blank" rel="noreferrer">Instagram</a>
-        </div>
-
-        <p class="fine">
-          Serving LA area • © <span id="year"></span> Mor Solutions
-        </p>
-      </div>
-    </section>
+    </footer>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
